@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="./Style.css">
+    <title>Salão de beleza</title>
+    <style>
+        /* Ajuste da imagem no banner */
+        .banner-content img {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            margin: 20px 0;
+            border-radius: 12px;
+        }
+
+        /* Animação ao passar o mouse */
+        .imagem-servico,
+        .galeria-container img {
+            transition: transform 0.3s ease;
+            border-radius: 8px;
+        }
+
+        .imagem-servico:hover,
+        .galeria-container img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Estilo para depoimentos com imagem */
+        .depoimentos-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .depoimento {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        .depoimento img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        blockquote {
+            margin: 0;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+    <!--Cabeçalho-->
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">Studio MB</h1>
+            <nav class="menu">
+                <a href="#sobre">Sobre Nós</a>
+                <a href="#servicos">Serviços</a>
+                <a href="#galeria">Galeria</a>
+                <a href="#depoimentos">Depoimentos</a>
+                <a href="#address">Contato</a>
+             </nav>
+        </div>
+    </header>
+    
+    <!--Banner Principal-->
+    <section class="banner">
+        <div class="banner-content">
+            <h2>Studio MB</h2>
+            <img src="./Imagens/60ff1bad47f4d401fd4e4c83_como-abrir-salao-beleza.jpg" alt="Imagem principal do salão">
+            <p>"Cuidamos da saúde e da beleza dos seus fios, realçando sua essência com brilho, estilo e sofisticação."</p>
+            <br><br>
+            <a href="https://wa.me/SEUNUMEROAQUI" target="_blank" class="btn-agendar">Agende seu horário</a>
+        </div>
+    </section>
+    
+    <!--Sobre Nós-->
+    <section id="sobre" class="sobre">
+        <div class="container">
+            <img src="./Imagens/cabeleireira.png" alt="Isadora Lima" class="foto-sobre">
+            <div class="texto-sobre">
+                <h3>Isadora Lima</h3>
+                <p>Cabeleleira profissional com anos de experiência, especializada em realçar a beleza natural de cada cliente com muito carinho e dedicação.</p>
+                <br><br>
+                <a href="https://wa.me/SEUNUMEROAQUI" target="_blank" class="btn-agendar">Fale comigo</a>
+            </div>
+        </div>
+    </section>
+
+    <!--Serviços-->
+    <section id="servicos" class="servicos">
+        <h2>Serviços</h2>
+        <div class="servicos-container">
+            <div class="servico">
+                <h3>Alisamento</h3>
+                <img src="./Tipos de cabelos/44_corte-de-cabelo-liso-longo.jpg" alt="Alisamento" class="imagem-servico">
+            </div>
+            <div class="servico">
+                <h3>Mechas</h3>
+                <img src="./Tipos de cabelos/6571d6e1ed0f9mechas-para-cabelos-escuros.jpg" alt="Mechas" class="imagem-servico">
+            </div>
+            <div class="servico">
+                <h3>Curto</h3>
+                <img src="./Tipos de cabelos/Cabelos-Curtos-Bubble-Bob.webp" alt="Corte Curto" class="imagem-servico">
+            </div>
+            <div class="servico">
+                <h3>Loiro</h3>
+                <img src="./Tipos de cabelos/cabelos-loiros-marco-antonio-de-biaggi-repicado.jpg" alt="Loiro" class="imagem-servico">
+            </div>
+            <div class="servico">
+                <h3>Cacheado</h3>
+                <img src="./Tipos de cabelos/corte-de-cabelo-cacheado-2025-9-1.jpg" alt="Cacheado" class="imagem-servico">
+            </div>
+            <div class="servico">
+                <h3>Casamento</h3>
+                <img src="./Tipos de cabelos/penteados-para-casamento-para-convidada-tranca-loiro-solto-Emma-Chen-Artistry.jpg" alt="Casamento" class="imagem-servico">
+            </div>
+
+            <div class="servico">
+                <h3>Progressiva Orgânica</h3>
+                <img src="./Tipos de cabelos/Prohall-Burix-One-Realinhamento-Capilar-Escova-Organica-1-Litro-4.jpg" alt="Progressiva" class="imagem-servico">
+            </div>
+
+             <div class="servico">
+                <h3>Reposição Lipídica</h3>
+                <img src="./Tipos de cabelos/cacheada-linda-rep2.jpg" alt="Reposição" class="imagem-servico">
+            </div>
+
+            <div class="servico">
+                <h3>Botox Orgânico</h3>
+                <img src="./Tipos de cabelos/botox-f5zjdg6whj.webp" alt="Botox" class="imagem-servico">
+            </div>
+
+            <div class="servico">
+                <h3>Manutenção do Liso</h3>
+                <img src="./Tipos de cabelos/linha-completa-detox-naturals-byvc-professional-67f01959a14efman.webp" alt="Manutenção" class="imagem-servico">
+            </div>
+
+            <div class="servico">
+                <h3>Botox Gold</h3>
+                <img src="./Tipos de cabelos/botox gold.jpeg" alt="Gold" class="imagem-servico">
+            </div>
+
+            <div class="servico">
+                <h3>Selagem</h3>
+                <img src="./Tipos de cabelos/selagem.jpeg" alt="Selagem" class="imagem-servico">
+            </div>
+
+        </div>
+    </section>
+
+    <!--Galeria antes e depois-->
+    <section id="galeria" class="galeria">
+        <h2>Antes e Depois</h2>
+        <div class="galeria-container">
+            <img src="./antes e depois/botox-capilar-antes-e-depois06 liso.jpg" alt="Antes e Depois (liso)">
+            <img src="./antes e depois/thelma-antes-e-edepois.webp" alt="Antes e Depois (cachos)">
+            <img src="./antes e depois/curto.jpg" alt="Antes e Depois (curto)">
+            <img src="./antes e depois/c238598ef0c924dcf241ab72466a6aadmechas.jpg" alt="Antes e Depois (mechas)">
+            <img src="./Tipos de cabelos/pintura.jpg" alt="Antes e Depois (pintura)">
+            <img src="./antes e depois/3ff7026dc763c7a3c39d224654e22159.jpg" alt="Antes e Depois (curto ruivo)">
+            <img src="./antes e depois/progressiva-reduzindo-o-frizz.jpg" alt="Antes e Depois (de costa)">
+            <img src="./antes e depois/camila-queiroz-capa.jpg" alt="Antes e Depois (camila)">
+            <img src="./antes e depois/mudanças-capilares-cabelo-cacheado-platinado-antes-e-depois.png" alt="Antes e Depois (platinado)">
+            <img src="./antes e depois/EjF6Ow1WsAA8WoT.jpg" alt="Antes e Depois (costa)">
+            <img src="./antes e depois/29510497-mulher-antes-e-depois-de-cabelo-tratamento-doente-cortar-e-saudavel-cabelo-cuidado-alisamento-generativo-ai-foto.jpg" alt="Antes e Depois (novo)">
+            <img src="./antes e depois/b58822_c319949898a24ed5ad0e6dc441c6db69~mv2.avif" alt="Antes e Depois (novo2)">
+        </div>
+        </div>
+    </section>
+    
+    <!--Depoimentos-->
+    <section id="depoimentos" class="depoimentos">
+        <h2>Depoimentos</h2>
+        <div class="depoimentos-container">
+            <div class="depoimento">
+                <img src="./Depoimentos/90c097159b9bf2eac99ed4f5a259ca52.jpg" alt="Cliente 1">
+                <blockquote>"Atendimento maravilhoso, saí me sentindo uma princesa!" - Ana Paula</blockquote>
+            </div>
+            <div class="depoimento">
+                <img src="./Depoimentos/mulher-lidiane-jones-bumble.webp" alt="Cliente 2">
+                <blockquote>"Profissional impecável, recomendo de olhos fechados!" - Juliana Alves</blockquote>
+            </div>
+
+            <div class="depoimento">
+                <img src="./Depoimentos/mulheres-0ttknsjvdtgkbm1g.jpg" alt="Cliente 3">
+                <blockquote>"A melhor da cidade!" - Luara Silva</blockquote>
+            </div>
+
+            <div class="depoimento">
+                <img src="./Depoimentos/O-que-é-ser-mulher-hoje-0.jpg" alt="Cliente 4">
+                <blockquote>"Excelente cabeleleira, muito simpática e divertida!" - Renata Oliveira</blockquote>
+            </div>
+
+            <div class="depoimento">
+                <img src="./Depoimentos/pexels-photo-733872.webp" alt="Cliente 5">
+                <blockquote>"A minha amiga é a melhor!" - Marília Santos</blockquote>
+            </div>
+            
+</div>
+</section>
+
+<section class="address" id="address">
+    <br>
+    <h2 class="title">Nosso <span>Endereço</span></h2>
+    <br>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.811778930262!2d-35.23940012493856!3d-7.374981472585694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ac62b619845575%3A0x394e5afabca25500!2sSAL%C3%83O%20DE%20BELEZA%20FASHION%20HAIR!5e0!3m2!1spt-BR!2sbr!4v1751159725473!5m2!1spt-BR!2sbr" 
+     width="600"
+     height="450"
+     style="border:0;" 
+     allowfullscreen="" 
+     loading="lazy" 
+     referrerpolicy="no-referrer-when-downgrade">
+    </iframe>" 
+    </section>
+    
+    <!--Rodapé-->
+    <footer class="footer">
+    <div class="container">
+        <p>Contato: (81) 98540-3727</p>
+        <br>
+        <div class="social">
+            <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+            <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+            <a href="#"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+            <br>
+            <br>
+            <p>&copy; 2025 Studio MB - Todos os direitos reservados.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="./Script.js"></script>    
+</body>
+</html>
+
